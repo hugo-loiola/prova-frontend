@@ -1,38 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Prezada turma,
 
-## Getting Started
+Criar um projeto chamado prova
 
-First, run the development server:
+    npm i -g npm@9.6.6
+    npx create-next-app@latest prova
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Instalar os pacotes:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    npm i axios
+    npm i react-bootstrap bootstrap
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Utilizando a seguinte api, faça o que se segue:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+    baseURL: https://api.artic.edu/api/v1
+    Documentação: http://api.artic.edu/docs
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1 (3 pontos) - Criar uma página com uma listagem de obras de artes (endpoint: /artworks), conforme imagem1. - Criar os itens em uma tabela - Adicionar uma opção para detalhamento do item, representado nessa imagem pelo ícone da lupa (mas pode adicionar um botão, link ou outro ícone)
+OBS: O json de retorno desse endpoint está no arquivo artworks.json
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2 - Ao clicar na opção de detalhe, apresentar os detalhes deste (endpoint: /artworks/{id}), conforme imagem2
+(2,5 pontos) - Separar a tela em duas colunas, onde a primeira é para a foto e a segunda para os dados detalhados na imagem
+(1 ponto) - Usar em cards coloridos (conforme imagem) para separar as colunas
+(1 ponto) - Caso o item não possua foto, o respectivo card não deverá ser exibido. (Ex: /artworks/264941)
+(0,5 pontos) - Adicionar um botão para voltar à página de listagem.
+OBS: O endereço da imagem é: "https://www.artic.edu/iiif/2/&quot; + arte.image_id + "/full/843,/0/default.jpg"
+OBS2: O json de retorno desse endpoint está no arquivo detalhe.json
 
-## Learn More
+3 - Criar uma página de "Tipos de Arte" que ao clicar liste os os gêneros (endpoint: /artwork-types), conforme imagem3.
+(1,5 pontos) - Em cada tópico, adicionar o nome do tipo e, entre parênteses, a data de atualização de cada tipo.
+(0,5 pontos) - Adicionar no menu os itens Obras e Tipos de Obra, cada um clicando para a sua página.
+OBS: O json de retorno desse endpoint está no arquivo tipos.json
 
-To learn more about Next.js, take a look at the following resources:
+4 (0,5 PONTO EXTRA) - Abaixo da imagem, exibir uma opção para Abrir a imagem em uma nova aba, onde será exibida somente a imagem na tela, conforme imagem4.
+5 (1 PONTO EXTRA) - Adicionar os ícones exibidos nas imagens (na listagem e nos botões da tela de detalhe). Sugestão: usar a biblioteca react-icons: npm i react-icons (pode usar qualquer ícone, não necessariamente os da imagem)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ATENÇÃO: O link do git ou a pasta zipada SEM O NODE_MODULES
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Boa prova.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Atenciosamente,
+Orion Teles.
