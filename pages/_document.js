@@ -10,6 +10,13 @@ export default function Document() {
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous"
       />
+      <link
+        rel="icon"
+        type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Art_logo.svg/800px-Art_logo.svg.png"
+      ></link>
+      <title>Prova</title>
+
       <body>
         <Main />
         <NextScript />
