@@ -13,9 +13,9 @@ export default function Document() {
       <link
         rel="icon"
         type="image/x-icon"
-        href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Art_logo.svg/800px-Art_logo.svg.png"
+        href="https://seeklogo.com/images/N/nasa-logo-D8FA7F7DE9-seeklogo.com.png"
       ></link>
-      <title>Prova</title>
+      <title>Prova Orion</title>
 
       <body>
         <Main />
