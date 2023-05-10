@@ -84,7 +84,11 @@ const index = ({ arte }) => {
             </Card.Header>
             <Card.Body>
               <Card.Text>
-                <strong>Artista:</strong> {arte.artist_title}
+                <strong>Artista:</strong> {arte.artist_title} (
+                {arte.artist_titles.map((item) => (
+                  <a>{item}</a>
+                ))}
+                )
                 <br />
                 <br />
                 <strong>Departamento:</strong>
